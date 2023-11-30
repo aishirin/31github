@@ -1,4 +1,4 @@
-// pages/index.tsx
+
 import React from 'react';
 
 const HomePage: React.FC = () => {
@@ -31,8 +31,7 @@ const HomePage: React.FC = () => {
               <tr>
                 <td>Blabla</td>
                 <td>Somthing</td>
-              </tr>
-             
+              </tr>  
             </tbody>
           </table>
         </section>
@@ -52,7 +51,6 @@ const HomePage: React.FC = () => {
         <p>End</p>
       </footer>
 
-    
     </div>
   );
 };
