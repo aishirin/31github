@@ -1,9 +1,17 @@
 
 import React from 'react';
+import Startup from './newestFunction';
+
 
 const HomePage: React.FC = () => {
+  const startupProps = {
+    companyName: "Your Company Name", // Replace with the actual company name
+    technology: ["React", "TypeScript"], // Replace with the actual technologies
+  };
   return (
+
     <div>
+      <Startup  {...startupProps}/>
       <header>
         <h1>Important tasks!</h1>
       </header>
