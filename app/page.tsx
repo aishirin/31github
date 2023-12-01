@@ -11,7 +11,7 @@ const HomePage: React.FC = () => {
   return (
 
     <div>
-      <Startup  {...startupProps}/>
+      <Startup />
       <header>
         <h1>Important tasks!</h1>
       </header>
