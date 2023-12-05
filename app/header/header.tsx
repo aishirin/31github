@@ -1,20 +1,33 @@
-// pages/index.tsx
-import { FC, useState } from 'react';
+// components/Header.tsx
+import Link from 'next/link';
+import { FC } from 'react';
+import styles from './Header.module.css';
 
-
-const Home: FC = () => {
-  const [input, setInput] = useState<string>('');
-
-  const handleChange = (event: React.ChangeEvent<HTMLInputElement>) => {
-    setInput(event.target.value);
-  };
-
+const Header: FC = () => {
   return (
-    <div>
-      <input type="text" value={input} onChange={handleChange} />
-    
+    <div className={styles.header}>
+      <Link href="/">
+        <a className={styles.link}>
+          <div className={styles.block}>Главная</div>
+        </a>
+      </Link>
+      <Link href="/traffic-lights">
+        <a className={styles.link}>
+          <div className={styles.block}>Светофоры</div>
+        </a>
+      </Link>
+      <Link href="/about">
+        <a className={styles.link}>
+          <div className={styles.block}>О нас</div>
+        </a>
+      </Link>
+      <Link href="/login">
+        <a className={styles.link}>
+          <div className={styles.block}>Логин</div>
+        </a>
+      </Link>
     </div>
   );
 };
 
-export default Home;
+export default Header;
