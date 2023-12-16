@@ -1,6 +1,6 @@
 
 import React from 'react';
-import Startup from './newestFunction';
+
 
 
 const HomePage: React.FC = () => {
@@ -11,7 +11,6 @@ const HomePage: React.FC = () => {
   return (
 
     <div>
-      <Startup />
       <header>
         <h1>Important tasks!</h1>
       </header>
